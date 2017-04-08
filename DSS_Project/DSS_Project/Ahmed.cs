@@ -31,8 +31,9 @@ namespace DSS_Project
                    // a.Text = (i + 1).ToString();
                     a.Location = new Point(pointX, pointY);
                     panel2.Controls.Add(a);
-                    panel2.Show();
+                    //panel2.Show();
                     pointX += 110;
+
                 }
             }
             catch (Exception)

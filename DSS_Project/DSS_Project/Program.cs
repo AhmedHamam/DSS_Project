@@ -22,7 +22,7 @@ namespace DSS_Project
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
             UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
-            Application.Run(new Ahmed());
+            Application.Run(new FRM1());
         }
     }
 }
