@@ -1,0 +1,8 @@
+D:\DSS_Project\DSS_Project\DSS_Project\bin\Debug\DSS_Project.exe
+D:\DSS_Project\DSS_Project\DSS_Project\bin\Debug\DSS_Project.pdb
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.csprojResolveAssemblyReference.cache
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Form1.resources
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Properties.Resources.resources
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.csproj.GenerateResource.Cache
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.exe
+D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.pdb
