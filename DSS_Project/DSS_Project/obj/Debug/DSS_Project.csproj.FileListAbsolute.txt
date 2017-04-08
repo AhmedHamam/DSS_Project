@@ -6,3 +6,13 @@ D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Properties.Resource
 D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.csproj.GenerateResource.Cache
 D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.exe
 D:\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.pdb
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\bin\Debug\DSS_Project.exe.config
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.exe
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.pdb
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\bin\Debug\DSS_Project.exe
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\bin\Debug\DSS_Project.pdb
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.csprojResolveAssemblyReference.cache
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Ahmed.resources
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Form1.resources
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.Properties.Resources.resources
+F:\DSS\DSS_Project\DSS_Project\DSS_Project\obj\Debug\DSS_Project.csproj.GenerateResource.Cache
