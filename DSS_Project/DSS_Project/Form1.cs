@@ -23,6 +23,7 @@ namespace DSS_Project
             gr_z_equation.Width = 200;
             gr_z_equation.Height = 200;
             tlp_z.Controls.Add(gr_z_equation);
+            
             gr_z_equation.Text = "X Equation";
             tlp_z.Controls.Add(gr_z_equation);
             //int width = this.Width;
