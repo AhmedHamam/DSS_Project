@@ -15,24 +15,36 @@ namespace DSS_Project
         {
             InitializeComponent();
         }
-
+        private GroupBox gr_z_equation;
         private void btn_genrate_Click(object sender, EventArgs e)
         {
-            gb_Z_Equation.Controls.Clear();
-            int num_variable;
-            num_variable = Convert.ToInt16(nud_variable.Value);
-            TextBox txt;
-            Label lb;
-            for (int i = 0; i < num_variable; i++)
+            gr_z_equation = new GroupBox();
+            gr_z_equation.Text = "Z Equation";
+            gr_z_equation.Width = 200;
+            gr_z_equation.Height = 200;
+            tlp_z.Controls.Add(gr_z_equation);
+            gr_z_equation.Text = "X Equation";
+            tlp_z.Controls.Add(gr_z_equation);
+            //int width = this.Width;
+            //int high = this.Height;
+            //int x = groupBox2.Location.X;
+            //int y = groupBox2.Location.Y;
+            //gr_z_equation.Location = new Point(width/2,high/2);
+            //this.Controls.Add(gr_z_equation);
+
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            foreach (Control c in this.Controls)
             {
-                txt = new TextBox();
-                lb=new Label();
-                lb.Text = "X" + i.ToString();
-                gb_Z_Equation.Controls.Add(txt);
-                gb_Z_Equation.Controls.Add(lb);
-
+                if (c is TextBox)
+                {
+                    if (c.Name == "txt1")
+                        MessageBox.Show(c.Text);
+                }
             }
-
         }
     }
 }

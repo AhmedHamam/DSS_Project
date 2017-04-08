@@ -38,7 +38,7 @@
             this.nud_variable = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_genrate = new DevExpress.XtraEditors.SimpleButton();
-            this.gb_Z_Equation = new System.Windows.Forms.GroupBox();
+            this.tlp_z = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_constrain)).BeginInit();
@@ -62,7 +62,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 51);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(418, 100);
+            this.groupBox1.Size = new System.Drawing.Size(378, 100);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -96,7 +96,7 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Location = new System.Drawing.Point(12, 177);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(418, 133);
+            this.groupBox2.Size = new System.Drawing.Size(378, 133);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             // 
@@ -146,29 +146,31 @@
             // 
             // btn_genrate
             // 
-            this.btn_genrate.Location = new System.Drawing.Point(678, 95);
+            this.btn_genrate.Location = new System.Drawing.Point(671, 12);
             this.btn_genrate.Name = "btn_genrate";
             this.btn_genrate.Size = new System.Drawing.Size(101, 56);
             this.btn_genrate.TabIndex = 3;
             this.btn_genrate.Text = "Genrate Z";
             this.btn_genrate.Click += new System.EventHandler(this.btn_genrate_Click);
             // 
-            // gb_Z_Equation
+            // tlp_z
             // 
-            this.gb_Z_Equation.Location = new System.Drawing.Point(446, 205);
-            this.gb_Z_Equation.Name = "gb_Z_Equation";
-            this.gb_Z_Equation.Size = new System.Drawing.Size(318, 152);
-            this.gb_Z_Equation.TabIndex = 4;
-            this.gb_Z_Equation.TabStop = false;
-            this.gb_Z_Equation.Text = "Z Equation ";
+            this.tlp_z.ColumnCount = 1;
+            this.tlp_z.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp_z.Location = new System.Drawing.Point(441, 123);
+            this.tlp_z.Name = "tlp_z";
+            this.tlp_z.RowCount = 1;
+            this.tlp_z.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tlp_z.Size = new System.Drawing.Size(369, 187);
+            this.tlp_z.TabIndex = 4;
             // 
             // Form1
             // 
             this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(806, 436);
-            this.Controls.Add(this.gb_Z_Equation);
+            this.ClientSize = new System.Drawing.Size(827, 454);
+            this.Controls.Add(this.tlp_z);
             this.Controls.Add(this.btn_genrate);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -198,7 +200,7 @@
         private System.Windows.Forms.NumericUpDown nud_variable;
         private System.Windows.Forms.Label label3;
         private DevExpress.XtraEditors.SimpleButton btn_genrate;
-        private System.Windows.Forms.GroupBox gb_Z_Equation;
+        private System.Windows.Forms.TableLayoutPanel tlp_z;
 
     }
 }
