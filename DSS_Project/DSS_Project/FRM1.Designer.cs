@@ -30,6 +30,8 @@
         {
             this.P_Constrain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_Add_Zequation = new DevExpress.XtraEditors.SimpleButton();
+            this.P_Zequation = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb_Max = new System.Windows.Forms.RadioButton();
             this.rb_Min = new System.Windows.Forms.RadioButton();
@@ -38,8 +40,7 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.nud_variable = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.P_Zequation = new System.Windows.Forms.Panel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btn_Clc = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_variable)).BeginInit();
@@ -62,7 +63,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.panel1.Controls.Add(this.simpleButton1);
+            this.panel1.Controls.Add(this.btn_Clc);
+            this.panel1.Controls.Add(this.btn_Add_Zequation);
             this.panel1.Controls.Add(this.P_Zequation);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.btn_Add_Constrain);
@@ -74,6 +76,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(829, 243);
             this.panel1.TabIndex = 2;
+            // 
+            // btn_Add_Zequation
+            // 
+            this.btn_Add_Zequation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Add_Zequation.Location = new System.Drawing.Point(731, 51);
+            this.btn_Add_Zequation.Name = "btn_Add_Zequation";
+            this.btn_Add_Zequation.Size = new System.Drawing.Size(93, 77);
+            this.btn_Add_Zequation.TabIndex = 9;
+            this.btn_Add_Zequation.Text = "Add_Z_equation";
+            this.btn_Add_Zequation.Click += new System.EventHandler(this.btn_Add_Zequation_Click);
+            // 
+            // P_Zequation
+            // 
+            this.P_Zequation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_Zequation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.P_Zequation.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.P_Zequation.Location = new System.Drawing.Point(0, 44);
+            this.P_Zequation.Name = "P_Zequation";
+            this.P_Zequation.Size = new System.Drawing.Size(725, 92);
+            this.P_Zequation.TabIndex = 8;
             // 
             // groupBox1
             // 
@@ -96,6 +120,7 @@
             this.rb_Max.TabStop = true;
             this.rb_Max.Text = "Max";
             this.rb_Max.UseVisualStyleBackColor = true;
+            this.rb_Max.CheckedChanged += new System.EventHandler(this.rb_Max_CheckedChanged);
             // 
             // rb_Min
             // 
@@ -126,6 +151,7 @@
             this.btn_Add_Constrain.Size = new System.Drawing.Size(93, 77);
             this.btn_Add_Constrain.TabIndex = 7;
             this.btn_Add_Constrain.Text = "Add_Constrain";
+            this.btn_Add_Constrain.Click += new System.EventHandler(this.btn_Add_Constrain_Click);
             // 
             // panel2
             // 
@@ -162,26 +188,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Enter Number of Variables ";
             // 
-            // P_Zequation
+            // btn_Clc
             // 
-            this.P_Zequation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.P_Zequation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.P_Zequation.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.P_Zequation.Location = new System.Drawing.Point(0, 44);
-            this.P_Zequation.Name = "P_Zequation";
-            this.P_Zequation.Size = new System.Drawing.Size(725, 92);
-            this.P_Zequation.TabIndex = 8;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton1.Location = new System.Drawing.Point(731, 51);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(93, 77);
-            this.simpleButton1.TabIndex = 9;
-            this.simpleButton1.Text = "Add_Z_equation";
+            this.btn_Clc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Clc.Location = new System.Drawing.Point(754, 3);
+            this.btn_Clc.Name = "btn_Clc";
+            this.btn_Clc.Size = new System.Drawing.Size(70, 43);
+            this.btn_Clc.TabIndex = 10;
+            this.btn_Clc.Text = "Calulate";
+            this.btn_Clc.Click += new System.EventHandler(this.btn_Clc_Click);
             // 
             // FRM1
             // 
@@ -190,7 +205,6 @@
             this.ClientSize = new System.Drawing.Size(829, 411);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.P_Constrain);
-            this.MaximizeBox = false;
             this.Name = "FRM1";
             this.Text = "FRM1";
             this.panel1.ResumeLayout(false);
@@ -215,6 +229,7 @@
         private System.Windows.Forms.RadioButton rb_Min;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel P_Zequation;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btn_Add_Zequation;
+        private DevExpress.XtraEditors.SimpleButton btn_Clc;
     }
 }
