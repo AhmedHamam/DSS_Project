@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.p_Constrain = new System.Windows.Forms.Panel();
+            this.P_Constrain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.rb_Max = new System.Windows.Forms.RadioButton();
@@ -38,28 +38,32 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.nud_variable = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.P_Zequation = new System.Windows.Forms.Panel();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nud_variable)).BeginInit();
             this.SuspendLayout();
             // 
-            // p_Constrain
+            // P_Constrain
             // 
-            this.p_Constrain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.P_Constrain.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.p_Constrain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.p_Constrain.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.p_Constrain.Location = new System.Drawing.Point(0, 149);
-            this.p_Constrain.Name = "p_Constrain";
-            this.p_Constrain.Size = new System.Drawing.Size(824, 262);
-            this.p_Constrain.TabIndex = 1;
+            this.P_Constrain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.P_Constrain.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.P_Constrain.Location = new System.Drawing.Point(0, 250);
+            this.P_Constrain.Name = "P_Constrain";
+            this.P_Constrain.Size = new System.Drawing.Size(824, 161);
+            this.P_Constrain.TabIndex = 1;
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.simpleButton1);
+            this.panel1.Controls.Add(this.P_Zequation);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.btn_Add_Constrain);
             this.panel1.Controls.Add(this.panel2);
@@ -68,7 +72,7 @@
             this.panel1.Font = new System.Drawing.Font("Tahoma", 12F);
             this.panel1.Location = new System.Drawing.Point(0, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(829, 143);
+            this.panel1.Size = new System.Drawing.Size(829, 243);
             this.panel1.TabIndex = 2;
             // 
             // groupBox1
@@ -117,7 +121,7 @@
             // btn_Add_Constrain
             // 
             this.btn_Add_Constrain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Add_Constrain.Location = new System.Drawing.Point(733, 53);
+            this.btn_Add_Constrain.Location = new System.Drawing.Point(731, 154);
             this.btn_Add_Constrain.Name = "btn_Add_Constrain";
             this.btn_Add_Constrain.Size = new System.Drawing.Size(93, 77);
             this.btn_Add_Constrain.TabIndex = 7;
@@ -130,9 +134,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.panel2.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.panel2.Location = new System.Drawing.Point(0, 53);
+            this.panel2.Location = new System.Drawing.Point(0, 138);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(725, 87);
+            this.panel2.Size = new System.Drawing.Size(725, 102);
             this.panel2.TabIndex = 6;
             // 
             // nud_variable
@@ -158,13 +162,34 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Enter Number of Variables ";
             // 
+            // P_Zequation
+            // 
+            this.P_Zequation.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.P_Zequation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.P_Zequation.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.P_Zequation.Location = new System.Drawing.Point(0, 44);
+            this.P_Zequation.Name = "P_Zequation";
+            this.P_Zequation.Size = new System.Drawing.Size(725, 92);
+            this.P_Zequation.TabIndex = 8;
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.simpleButton1.Location = new System.Drawing.Point(731, 51);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(93, 77);
+            this.simpleButton1.TabIndex = 9;
+            this.simpleButton1.Text = "Add_Z_equation";
+            // 
             // FRM1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(829, 411);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.p_Constrain);
+            this.Controls.Add(this.P_Constrain);
             this.MaximizeBox = false;
             this.Name = "FRM1";
             this.Text = "FRM1";
@@ -179,7 +204,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel p_Constrain;
+        private System.Windows.Forms.Panel P_Constrain;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.NumericUpDown nud_variable;
         private System.Windows.Forms.Label label3;
@@ -189,5 +214,7 @@
         private System.Windows.Forms.RadioButton rb_Max;
         private System.Windows.Forms.RadioButton rb_Min;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel P_Zequation;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
     }
 }
